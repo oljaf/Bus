@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {% block content %}
+        <h1><a href="#">Auto park</a></h1><br>
+        <a href="{% url 'allcar' %}"></a>
+        <h1>Enter your car number</h1>
+        <a href="all.html">Qo'shish</a>
+        {% endblock %}
+    </form>
+</body>
+</html>
